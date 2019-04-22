@@ -1,3 +1,9 @@
+.wrap {
+	width: 942px;
+	height: 400px;
+	margin: 10px auto;
+}
+
 .slider {
 	--color-1: #19365f;
 	--color-2: rgba(26, 101, 174, 0.1);
