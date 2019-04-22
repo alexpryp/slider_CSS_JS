@@ -1,5 +1,6 @@
 .slider {
 	--color-1: #19365f;
+	--color-2: rgba(26, 101, 174, 0.1);
 	margin: 25px;
 	position: relative;
 	overflow: hidden;
@@ -20,6 +21,11 @@
 	height: 20px;
 	border: solid var(--color-1);
 	border-width: 2px 2px 0 0;
+}
+
+.slider__arrow:hover::before,
+.slider__arrow:focus::before {
+	border-color: var(--color-2);
 }
 
 .slider__arrow_left {
@@ -59,6 +65,17 @@
 	outline: none;
 }
 
+.slider__dot:hover,
+.slider__dot:focus {
+	border-color: var(--color-2);
+}
+
 .slider__dot_active {
 	background-color: var(--color-1); 
+}
+
+.slider__dot_active:hover,
+.slider__dot_active:focus {
+	border-color: transparent;
+	background-color: var(--color-2);
 }
